@@ -53,10 +53,10 @@ x = df[df['Download (Mb/s)'] >df['Download (Mb/s)'].mean()]
 print(x)
    
 
-# print(f"{df['Download (Mb/s)'].min():.2f} slowest downlad")
-# print(f"{df['Download (Mb/s)'].max():.2f} fastest download")
-# print(f"{df['Upload (Mb/s)'].min():.2f} slowest upload")
-# print(f"{df['Upload (Mb/s)'].max():.2f} fastest upload")
+print(f"{df['Download (Mb/s)'].min():.2f} slowest downlad")
+print(f"{df['Download (Mb/s)'].max():.2f} fastest download")
+print(f"{df['Upload (Mb/s)'].min():.2f} slowest upload")
+print(f"{df['Upload (Mb/s)'].max():.2f} fastest upload")
 
 # national average download speed in the UK is 73.21 Mbps, 
 # while the average upload speed is 18.4 Mbps
@@ -75,6 +75,11 @@ df1 = df1.dropna(how="any" )
 print(f"{df1['Mean Download'].mean():.2f} mean downlad of group")
 
 print(f"{df1['Mean Upload'].mean():.2f} mean upload of group")
+
+print(f"{df1['Mean Download'].min():.2f} slowest downlad")
+print(f"{df1['Mean Download'].max():.2f} fastest download")
+print(f"{df1['Mean Upload'].min():.2f} slowest upload")
+print(f"{df1['Mean Upload'].max():.2f} fastest upload")
 
 # print(df1)
 # print(df1[])
